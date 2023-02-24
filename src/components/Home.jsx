@@ -16,7 +16,10 @@ const experience = "2 years";
 const Banner = () => {
   return (
     <>
-      <Grid container sx={{ display: "flex", alignItems: "center", mt: 15,mb:6 }}>
+      <Grid
+        container
+        sx={{ display: "flex", alignItems: "center", mt: 15, mb: 6 }}
+      >
         <Grid item xs={12} md={6} lg={6} sx={{ textAlign: "center" }}>
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
             Hi I am
@@ -30,23 +33,33 @@ const Banner = () => {
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
             with {experience} experience
           </Typography>
+          <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
+            I am good at
+          </Typography>
 
-          <Box sx={{ fontSize: "25px", fontFamily: "Montserate", mt: 2 }}>
+          <Box
+            sx={{
+              fontSize: "25px",
+              fontFamily: "Montserate",
+              mt: 2,
+              color: "#e94e5d",
+            }}
+          >
             <Typewriter
               options={{
                 autoStart: true,
                 loop: true,
                 delay: 40,
                 strings: [
-                  "I am good at Html",
-                  "I am good at CSS",
-                  "I am good at Javascript",
-                  "I am good at Bootstrap",
-                  "I am good at React",
-                  "I am good at php",
-                  "I am good at Material Ui",
-                  "I am good at SCSS",
-                  "I am good at MYSQL",
+                  " Html",
+                  " CSS",
+                  " Javascript",
+                  " Bootstrap",
+                  " React",
+                  " php",
+                  " Material Ui",
+                  " SCSS",
+                  " MYSQL",
                 ],
               }}
             />
@@ -74,7 +87,7 @@ const Banner = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
-          <img src={bg} alt='error ' style={{width:"100%"}} />
+          <img src={bg} alt="error " style={{ width: "100%" }} />
         </Grid>
       </Grid>
     </>
