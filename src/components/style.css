@@ -1,0 +1,77 @@
+.navbar {
+  background-color: black;
+}
+
+.barcolor {
+  color: red !important;
+}
+
+.home-container {
+  background-image: url(../assets/home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: lightgray;
+  height: 100vh;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  font-family: Montserate;
+  font-weight: 600;
+}
+.progress-label {
+  font-family: Montserate;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-hover:hover {
+  border: 1px solid white;
+  background-color: red;
+}
+.form {
+  border: 2px solid red;
+  border-radius: 25px;
+  color: white;
+  display: grid;
+  padding: 25px;
+  margin: 15px;
+}
+.form label {
+  color: lightgray;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Montserate;
+  margin: 10px;
+}
+.form input[type="text"] {
+  border: 2px solid red;
+  height: 42px;
+  border-radius: 10px;
+}
+.form input[type="email"] {
+  border: 2px solid red;
+  height: 42px;
+  border-radius: 10px;
+}
+::placeholder {
+  padding: 10px;
+  font-weight: 600;
+  color: lightgray;
+}
+.textArea{
+  border: 2px solid red;
+
+  border-radius: 10px;
+}
+.number{
+  border: 2px solid red;
+  height: 42px;
+  border-radius: 10px;
+}
+.btn:hover{
+background-color: red !important;
+border: 1px solid white !important;
+
+}
