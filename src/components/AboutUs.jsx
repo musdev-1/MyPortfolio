@@ -71,7 +71,7 @@ const AboutUs = () => {
         </Grid>
       </Grid>
       <Grid container sx={{ display: "flex", justifyContent: "center" }}>
-        <Grid item md={8} xs={12}>
+        <Grid item md={8} xs={10}>
           <ProgressBar />
         </Grid>
       </Grid>

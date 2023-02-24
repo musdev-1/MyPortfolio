@@ -30,7 +30,7 @@ const Navbar = () => {
     <AppBar position="fixed">
       <Container maxWidth="xxl" className="navbar">
         <Toolbar disableGutters>
-          <img src={logo} width={100} style={{ zIndex: 999 }} />
+          <img src={logo} width={100} />
           <Typography
             variant="h6"
             noWrap
@@ -86,13 +86,7 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <GitHubIcon
-            sx={{
-              display: { xs: "flex", md: "none" },
-              mr: 1,
-              color: "#272343",
-            }}
-          />
+
           <Typography
             variant="h5"
             noWrap
