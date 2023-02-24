@@ -110,7 +110,7 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          SRK Portfolio
+          Shahzeb 
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },justifyContent:{md:"end",xs:"none"} }}>
           {pages.map((page) => (

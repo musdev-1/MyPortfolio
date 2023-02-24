@@ -1,68 +1,72 @@
-import { Card, CardContent, Grid, Typography } from '@mui/material'
-import React from 'react'
+import { Card, CardContent, Grid, Typography } from "@mui/material";
+import React from "react";
 
 const Projects = () => {
-
-const cardProjects = [
+  const cardProjects = [
     {
-        title:"School Fee Submission System",
-        link:"http/school.com"
+      title: "School Fee Submission System",
+      link: "http/school.com",
     },
     {
-        title:"Payroll Management System",
-        link:"http/school.com"
+      title: "Payroll Management System",
+      link: "http/school.com",
     },
     {
-        title:"Website Front end",
-        link:"http/school.com"
+      title: "Dummy",
+      link: "http/school.com",
     },
     {
-        title:"National Savings",
-        link:"http/school.com"
+      title: "National Savings",
+      link: "http/school.com",
     },
-]
+  ];
 
   return (
     <>
-       <Grid container >
+      <Grid container>
         <Grid item md={12} xs={12}>
-<Typography variant='h3' textAlign='center'>Projects</Typography>
+          <Typography variant="h3" textAlign="center">
+            Projects
+          </Typography>
         </Grid>
-
-    </Grid>
-    <Grid container spacing={2} sx={{ padding: "25px" }}>
-        {cardProjects.map((item) =>{
-
-        
-      return(
-      <Grid item md={3} sm={6} xs={12}>
-      <Card   sx={{ background: "black", border: "1px solid red" }}
-                className="card-hover">
-  <CardContent>
-<Typography  variant="h6"
-                    sx={{
-                      fontWeight: 600,
-                      color: "lightgray",
-                      textAlign: "center",
-                    }}>{item.title}</Typography>
-<Typography  variant="h6"
-                    sx={{
-                      fontWeight: 600,
-                      color: "lightgray",
-                      textAlign: "center",
-                    }}>{item.link}</Typography>
-  </CardContent>
-</Card>
       </Grid>
-      );
-       }
-      )}
-   
-
-    </Grid>
+      <Grid container spacing={2} sx={{ padding: "25px" }}>
+        {cardProjects.map((item) => {
+          return (
+            <Grid item md={3} sm={6} xs={12}>
+              <Card
+                sx={{ background: "black", border: "1px solid red" }}
+                className="card-hover"
+              >
+                <CardContent>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 600,
+                      color: "lightgray",
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 600,
+                      color: "lightgray",
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.link}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          );
+        })}
+      </Grid>
     </>
- 
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

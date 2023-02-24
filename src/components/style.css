@@ -19,6 +19,7 @@
   align-items: center;
   font-family: Montserate;
   font-weight: 600;
+  font-size: 19px;
 }
 .progress-label {
   font-family: Montserate;
@@ -60,18 +61,17 @@
   font-weight: 600;
   color: lightgray;
 }
-.textArea{
+.textArea {
   border: 2px solid red;
 
   border-radius: 10px;
 }
-.number{
+.number {
   border: 2px solid red;
   height: 42px;
   border-radius: 10px;
 }
-.btn:hover{
-background-color: red !important;
-border: 1px solid white !important;
-
+.btn:hover {
+  background-color: red !important;
+  border: 1px solid white !important;
 }
