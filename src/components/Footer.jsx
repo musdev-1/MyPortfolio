@@ -8,7 +8,7 @@ const Footer = () => {
         <Grid item md={12} xs={12}>
           <Typography
             sx={{
-              color: "white",
+              color: "#272343",
               fontWeight: 600,
               fontSize: "16px",
               textAlign: "CENTER",

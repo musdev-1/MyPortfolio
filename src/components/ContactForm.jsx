@@ -8,27 +8,24 @@ import React from "react";
 const contactInfo = [
   {
     id: "1",
-    title: "Email at",
-    description: "Gmail",
-    link: "shahzebkhattak703@gmail.com",
+    title: "Email",
+    description: "shahzebkhattak703@gmail.com",
+    // link: "shahzebkhattak703@gmail.com",
   },
   {
     id: "2",
-    title: "Join me ",
-    description: "LinkdIn",
-    link: "https://www.linkedin.com/in/shahzeb-rehman-khattak-5723b7219/",
+    title: "Skype",
+    description: "shahzebkhattak703@gmail.com",
   },
   {
     id: "3",
-    title: "Connect with",
-    description: "Facebook",
-    link: "https://www.facebook.com/",
+    title: "Mobile ",
+    description: "+92 03235254333",
   },
   {
     id: "4",
-    title: "DM ON",
-    description: "Whatsapp",
-    link: "03235254333",
+    title: "WhatsApp",
+    description: "+92 03235254333",
   },
 ];
 
@@ -118,15 +115,7 @@ const ContactForm = () => {
                               cursor: "pointer",
                             }}
                           >
-                            <a
-                              href={item.link}
-                              style={{
-                                textDecoration: "none",
-                                color: "#272343",
-                              }}
-                            >
-                              {item.description}
-                            </a>
+                            {item.description}
                           </Typography>
                         </CardContent>
                       </Card>
