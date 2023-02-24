@@ -6,22 +6,18 @@ import Grid from "@mui/material/Grid";
 import Typewriter from "typewriter-effect";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import bg from "../assets/bg3.png";
 import "./style.css";
 
 const name = "Shahzeb Rehman Khattak";
-const occupation = " Frontend webdeveloper";
+const occupation = "  web developer";
 const experience = "2 years";
 
 const Banner = () => {
   return (
     <>
-      <Grid container className="home-container">
-        <Grid
-          item
-          xs={12}
-          md={12}
-          sx={{ textAlign: "center", marginTop: "200px" }}
-        >
+      <Grid container sx={{ display: "flex", alignItems: "center", mt: 15 }}>
+        <Grid item xs={6} md={6} sx={{ textAlign: "center" }}>
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
             Hi I am
           </Typography>
@@ -29,7 +25,7 @@ const Banner = () => {
             {name}
           </Typography>
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
-            I am {occupation}.{" "}
+            I am {occupation}.
           </Typography>
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
             with {experience} experience
@@ -58,16 +54,16 @@ const Banner = () => {
               <Button
                 sx={{
                   borderRadius: "25px",
-                  border: "2px solid white",
+                  border: "2px solid #626fe6",
                   color: "white",
                   fontWeight: 600,
                   margin: "10px",
                   padding: "8px 20px",
                 }}
-                className="btn"
+                className="btn hvr-sweep-to-right"
               >
                 <a
-                  style={{ color: "white", textDecoration: "none" }}
+                  style={{ color: "#272343", textDecoration: "none" }}
                   href="./ShahzebCV.pdf"
                   download
                 >
@@ -77,7 +73,9 @@ const Banner = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={12}></Grid>
+        <Grid item xs={6} md={6} sx={{ mt: 2 }}>
+          <img src={bg} />
+        </Grid>
       </Grid>
     </>
   );

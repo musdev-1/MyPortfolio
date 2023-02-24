@@ -72,14 +72,21 @@ function LinearProgressWithLabel(props) {
         <Box
           className="progress-box"
           sx={{
+            padding: "5px",
+            borderRadius: "8px",
             background: backgroundColor[Math.floor(Math.random() * 6)],
             border:
               "0.5px solid backgroundColor[ Math.floor(Math.random() * 6) ]",
           }}
         >
-          <Typography className="progress-value">{`${Math.round(
-            props.value
-          )}%`}</Typography>
+          <Typography
+            className="progress-value"
+            sx={{
+              color: "white",
+              fontSize: "12px",
+              fontWeight: 500,
+            }}
+          >{`${Math.round(props.value)}%`}</Typography>
         </Box>
       </Box>
     </Box>
@@ -89,10 +96,10 @@ function LinearProgressWithLabel(props) {
 const ProgressBar = () => {
   return (
     <>
-      <Box sx={{ width: "100%", padding: "10px", mb: 3 }}>
+      <Box sx={{ width: "100%", padding: "10px" }}>
         {progreeArr.map((item, index) => {
           return (
-            <Box sx={{ mt: 4, mb: 5 }}>
+            <Box >
               <Typography className="progress-title">{item.title}</Typography>
               <LinearProgressWithLabel
                 sx={{

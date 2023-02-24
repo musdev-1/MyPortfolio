@@ -35,7 +35,7 @@ const Projects = () => {
           return (
             <Grid item md={3} sm={6} xs={12}>
               <Card
-                sx={{ background: "black", border: "1px solid red" }}
+                sx={{ background: "#e4f1fe", border: "1px solid #d9dad7" }}
                 className="card-hover"
               >
                 <CardContent>
@@ -43,7 +43,7 @@ const Projects = () => {
                     variant="h6"
                     sx={{
                       fontWeight: 600,
-                      color: "lightgray",
+                      color: "#272343",
                       textAlign: "center",
                     }}
                   >
@@ -53,7 +53,7 @@ const Projects = () => {
                     variant="h6"
                     sx={{
                       fontWeight: 600,
-                      color: "lightgray",
+                      color: "#272343",
                       textAlign: "center",
                     }}
                   >

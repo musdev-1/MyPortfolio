@@ -76,7 +76,7 @@ const ContactForm = () => {
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", color: "lightgray" }}
+            sx={{ textAlign: "center", color: "#272343" }}
           >
             Contact Us
           </Typography>
@@ -93,8 +93,8 @@ const ContactForm = () => {
                     <Grid item lg={3} md={3} sm={6} xs={12}>
                       <Card
                         sx={{
-                          background: "black",
-                          border: "1px solid red",
+                          background: "#e4f1fe",
+                          border: "1px solid #d9dad7",
                           m: 2,
                         }}
                         className="card-hover"
@@ -104,7 +104,7 @@ const ContactForm = () => {
                             variant="h6"
                             sx={{
                               fontWeight: 600,
-                              color: "lightgray",
+                              color: "#272343",
                               textAlign: "center",
                             }}
                           >
@@ -113,14 +113,17 @@ const ContactForm = () => {
                           <Typography
                             sx={{
                               fontWeight: 600,
-                              color: "lightgray",
+                              color: "#272343",
                               textAlign: "center",
                               cursor: "pointer",
                             }}
                           >
                             <a
                               href={item.link}
-                              style={{ textDecoration: "none", color: "white" }}
+                              style={{
+                                textDecoration: "none",
+                                color: "#272343",
+                              }}
                             >
                               {item.description}
                             </a>

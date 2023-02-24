@@ -19,10 +19,10 @@ const AboutUs = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              fontFamily: "Montserate",
+              // fontFamily: "Montserate",
             }}
           >
-            About Us
+            About Me
           </Typography>
         </Grid>
       </Grid>
@@ -35,62 +35,19 @@ const AboutUs = () => {
           textAlign: { sm: "center", xs: "center", md: "left" },
         }}
       >
-        <Grid item md={4} xs={12}>
-          <Typography
-            variant="h3"
-            sx={{ fontFamily: "Montserate", fontWeight: 700, mb: 4 }}
-          >
-            Shahzeb Rehman Khattak
-          </Typography>
-          <Box>
-            <ul>
-              <li
-                style={{
-                  fontSize: "22px",
-                  fontFamily: "Montserate",
-                  fontWeight: 500,
-                  textAlign: "justify",
-                  paddingBottom: "10px",
-                }}
-              >
-                BSCS
-              </li>
-              <li
-                style={{
-                  fontSize: "22px",
-                  fontFamily: "Montserate",
-                  fontWeight: 500,
-                  textAlign: "justify",
-                  paddingBottom: "10px",
-                }}
-              >
-                3 months Internship at Corramer
-              </li>
-              <li
-                style={{
-                  fontSize: "22px",
-                  fontFamily: "Montserate",
-                  fontWeight: 500,
-                  textAlign: "justify",
-                  paddingBottom: "10px",
-                }}
-              >
-                9 month working in Solo choicez as Web developer(php)
-              </li>
-              <li
-                style={{
-                  fontSize: "22px",
-                  fontFamily: "Montserate",
-                  fontWeight: 500,
-                  textAlign: "justify",
-                  paddingBottom: "10px",
-                }}
-              >
-                April 1 from Current working in Orcalo Holding as Front end
-                React Developer
-              </li>
-            </ul>
-          </Box>
+        <Grid
+          item
+          md={6}
+          xs={12}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <img
+            src={img1}
+            alt=""
+            style={{ maxWidth: "100%", borderRadius: "16%", height: "500px" }}
+          />
+        </Grid>
+        <Grid item md={6} xs={12}>
           <Box sx={{ mt: 3, mb: 4 }}>
             <Typography
               sx={{
@@ -101,52 +58,20 @@ const AboutUs = () => {
                   sm: "center",
                   xs: "center",
                   md: "left",
-                  lg: "left",
+                  lg: "center",
                 },
               }}
             >
-              I am graduated in 2021 and working as Web developer from
-              2020.During the past year I have learned
-              Html5,css3,JS,REACT,php,material ui,scss,bootstrap,mysql ,
-              TailwindCss,AntDesign.My design are fully responsive in all
-              standard screens.
+              I am senior web developer .I have 2 years experiance. I have
+              expertise in Html5, css3, JS, REactJS, php ,material ui, scss,
+              bootstrap, mysql, TailwindCss, AntDesign. My design are fully
+              responsive and dynamic in all standard screens.
             </Typography>
           </Box>
-
-          <Box>
-            <p className="address">
-              <span>
-                <PermPhoneMsgIcon sx={{ color: "red" }} />
-              </span>
-              : 03235254333
-            </p>
-            <p className="address">
-              <span>
-                <EmailIcon sx={{ color: "red" }} />
-              </span>
-              : shahzebkhattak703@gmail.com
-            </p>
-            <p className="address">
-              <span>
-                <LocationOnIcon sx={{ color: "red" }} />
-              </span>
-              : Islamabad,Pakistan
-            </p>
-          </Box>
         </Grid>
-        <Grid
-          item
-          md={4}
-          xs={12}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <img
-            src={img1}
-            alt=""
-            style={{ maxWidth: "100%", borderRadius: "16%" }}
-          />
-        </Grid>
-        <Grid item md={4} xs={12}>
+      </Grid>
+      <Grid container sx={{ display: "flex", justifyContent: "center" }}>
+        <Grid item md={8} xs={12}>
           <ProgressBar />
         </Grid>
       </Grid>
