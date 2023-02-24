@@ -30,7 +30,13 @@ const Navbar = () => {
     <AppBar position="fixed">
       <Container maxWidth="xxl" className="navbar">
         <Toolbar disableGutters>
-          <img src={logo} width={100} />
+          <Box
+            sx={{
+              display: { lg: "block", md: "block", sm: "none", xs: "none" },
+            }}
+          >
+            <img src={logo} width={100} />
+          </Box>
           <Typography
             variant="h6"
             noWrap

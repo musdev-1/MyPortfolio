@@ -109,6 +109,12 @@ const ContactForm = () => {
                           </Typography>
                           <Typography
                             sx={{
+                              fontSize: {
+                                lg: "16px",
+                                md: "16px",
+                                sm: "16px",
+                                xs: "17px",
+                              },
                               fontWeight: 600,
                               color: "#272343",
                               textAlign: "center",

@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <>
       <Grid container sx={{ display: "flex", alignItems: "center", mt: 15,mb:6 }}>
-        <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
+        <Grid item xs={12} md={6} lg={6} sx={{ textAlign: "center" }}>
           <Typography variant="h5" sx={{ fontFamily: "Montserate", mt: 2 }}>
             Hi I am
           </Typography>
@@ -73,7 +73,7 @@ const Banner = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} lg={6}>
           <img src={bg} alt='error ' style={{width:"100%"}} />
         </Grid>
       </Grid>
