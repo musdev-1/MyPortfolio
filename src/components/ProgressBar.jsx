@@ -30,6 +30,14 @@ const progreeArr = [
     value: 90,
   },
   {
+    title: "TypeScript",
+    value: 90,
+  },
+  {
+    title: "Next.Js",
+    value: 90,
+  },
+  {
     title: "Css",
     value: 99,
   },
