@@ -16,34 +16,29 @@ const backgroundColor = [
 ];
 
 const progreeArr = [
-  {
-    title: "React",
-    value: 80,
-  },
+ 
   {
     title: "Html",
     value: 99,
   },
   {
-    title: "php",
+    title: "Javascript",
     value: 80,
   },
   {
-    title: "mysql",
-    value: 80,
+    title: "React",
+    value: 90,
   },
   {
     title: "Css",
     value: 99,
   },
+
   {
     title: "SCSS",
     value: 95,
   },
-  {
-    title: "Javascript",
-    value: 80,
-  },
+ 
   {
     title: "Material UI",
     value: 95,
@@ -59,6 +54,14 @@ const progreeArr = [
   {
     title: "Bootstrap",
     value: 95,
+  },
+  {
+    title: "php",
+    value: 80,
+  },
+  {
+    title: "mysql",
+    value: 80,
   },
 ];
 

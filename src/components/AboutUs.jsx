@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
-import img1 from "../assets/img1.jpg";
+import img1 from "../assets/mebg.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -43,11 +43,15 @@ const AboutUs = () => {
           xs={12}
           sx={{ display: "flex", justifyContent: "center" }}
         >
-          <img
-            src={img1}
-            alt=""
-            style={{ maxWidth: "100%", borderRadius: "12px", height: "500px" }}
-          />
+          <Box
+            sx={{
+              border: "1px solid lightblue",
+              borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
+              background: "lightblue",
+            }}
+          >
+            <img src={img1} alt="" width={400} />
+          </Box>
         </Grid>
         <Grid item lg={6} md={6} xs={12}>
           <Box sx={{ mt: 3, mb: 4 }}>

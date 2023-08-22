@@ -12,12 +12,12 @@ const Projects = () => {
       link: "http/school.com",
     },
     {
-      title: "Dummy",
-      link: "http/school.com",
+      title: "Student Help Squad",
+      link: "https://studenthelpsquad.co.uk/",
     },
     {
-      title: "National Savings",
-      link: "http/school.com",
+      title: "AL Meezan AlAhmer",
+      link: "https://almeezanalahmer-trqx.vercel.app/",
     },
   ];
 
@@ -49,15 +49,21 @@ const Projects = () => {
                   >
                     {item.title}
                   </Typography>
+                  
                   <Typography
                     variant="h6"
                     sx={{
                       fontWeight: 600,
                       color: "#272343",
                       textAlign: "center",
+                      cursor:"pointer"
                     }}
                   >
-                    {item.link}
+                    <a
+                      href={item.link}
+                      style={{ color: "#272343", fontWeight:600 }}>
+                      {item.link}</a>
+                    
                   </Typography>
                 </CardContent>
               </Card>
