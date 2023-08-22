@@ -27,7 +27,6 @@ const AboutUs = () => {
           </Typography>
         </Grid>
       </Grid>
-
       <Grid
         container
         spacing={3}
@@ -41,11 +40,10 @@ const AboutUs = () => {
           lg={6}
           md={6}
           xs={12}
-          sx={{ display: "flex", justifyContent: "center" }}
+          sx={{ display: "flex", justifyContent: "center", padding:'1.5rem' }}
         >
           <Box
             sx={{
-              border: "1px solid lightblue",
               borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
               background: "lightblue",
             }}

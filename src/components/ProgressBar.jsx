@@ -111,7 +111,7 @@ const ProgressBar = () => {
       <Grid columnSpacing={5} rowSpacing={2} container sx={{ width: "100%", padding: "10px"}}>
         {progreeArr.map((item, index) => {
           return (
-            <Grid item lg={6}>
+            <Grid item lg={6} xs={12}>
               <Typography className="progress-title" style={{fontWeight:600}}>{item.title}</Typography>
               <LinearProgressWithLabel
                 sx={{
