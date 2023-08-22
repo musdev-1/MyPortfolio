@@ -2,7 +2,7 @@ import React from "react";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { Typography } from "antd";
 
 const backgroundColor = [
@@ -104,18 +104,18 @@ function LinearProgressWithLabel(props) {
   );
 }
 
-const ProgressBar = () => {
+const ProgressBar = () => { 
   return (
     <>
-      <Box sx={{ width: "100%", padding: "10px" }}>
+      
+      <Grid columnSpacing={5} rowSpacing={2} container sx={{ width: "100%", padding: "10px"}}>
         {progreeArr.map((item, index) => {
           return (
-            <Box >
-              <Typography className="progress-title">{item.title}</Typography>
+            <Grid item lg={6}>
+              <Typography className="progress-title" style={{fontWeight:600}}>{item.title}</Typography>
               <LinearProgressWithLabel
                 sx={{
                   padding: "3px",
-
                   borderRadius: "6px",
                   background: "#D9DBE9",
                   "& .MuiLinearProgress-bar1Determinate": {
@@ -124,10 +124,10 @@ const ProgressBar = () => {
                 }}
                 value={item.value}
               />
-            </Box>
+            </Grid>
           );
         })}
-      </Box>
+      </Grid>
     </>
   );
 };
