@@ -16,11 +16,11 @@ const AboutUs = () => {
       <Grid container mt={2}>
         <Grid item md={12} xs={12}>
           <Typography
-            variant="h2"
+            variant="h3"
             sx={{
               display: "flex",
               justifyContent: "center",
-              // fontFamily: "Montserate",
+              fontWeight:600
             }}
           >
             About Me
@@ -44,8 +44,9 @@ const AboutUs = () => {
         >
           <Box
             sx={{
-              borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
+              borderRadius: "40% 70% 70% 40% / 50% 30% 70% 70% ",
               background: "lightblue",
+              boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
             }}
           >
             <img src={img1} alt="" width={400} />
@@ -66,9 +67,9 @@ const AboutUs = () => {
                 },
               }}
             >
-              I am senior web developer .I have 2 years experiance. I have
-              expertise in Html5, css3, JS, REactJS, php ,material ui, scss,
-              bootstrap, mysql, TailwindCss, AntDesign. My design are fully
+              I am web developer .I have 3 years experiance in web development. I have
+              expertise in Html5, css3, JS, ReactJS,,Typescipt, Next.js,React Native, php ,material ui, scss,
+              bootstrap, mySql, TailwindCss, AntDesign. My design are fully
               responsive and dynamic in all standard screens.
             </Typography>
           </Box>
@@ -76,11 +77,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                  background: "#e4f1fe",
-                  border: "1px solid #d9dad7",
                   display: "flex",
                   justifyContent: "center",
-                  borderRadius: "8px",
+                  background: "#e6f4f9", 
+                  borderRadius:"20px",
+                  boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
+                  borderColor:"#d9dad7"
                 }}
                 className="card-hover"
               >
@@ -95,11 +97,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                  background: "#e4f1fe",
-                  border: "1px solid #d9dad7",
-                  display: "flex",
+                   display: "flex",
                   justifyContent: "center",
-                  borderRadius: "8px",
+                  background: "#e6f4f9", 
+                  borderRadius:"20px",
+                  boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
+                  borderColor:"#d9dad7"
                 }}
                 className="card-hover"
               >
@@ -109,11 +112,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                  background: "#e4f1fe",
-                  border: "1px solid #d9dad7",
-                  display: "flex",
+                   display: "flex",
                   justifyContent: "center",
-                  borderRadius: "8px",
+                  background: "#e6f4f9", 
+                  borderRadius:"20px",
+                  boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
+                  borderColor:"#d9dad7"
                 }}
                 className="card-hover"
               >
@@ -123,11 +127,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                  background: "#e4f1fe",
-                  border: "1px solid #d9dad7",
-                  display: "flex",
+                   display: "flex",
                   justifyContent: "center",
-                  borderRadius: "8px",
+                  background: "#e6f4f9", 
+                  borderRadius:"20px",
+                  boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
+                  borderColor:"#d9dad7"
                 }}
                 className="card-hover"
               >

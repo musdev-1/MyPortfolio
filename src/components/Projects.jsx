@@ -25,7 +25,10 @@ const Projects = () => {
     <>
       <Grid container>
         <Grid item md={12} xs={12}>
-          <Typography variant="h3" textAlign="center">
+          <Typography
+            variant="h3"
+            sx={{ textAlign: "center", fontWeight: 600 }}
+          >
             Projects
           </Typography>
         </Grid>
@@ -35,7 +38,12 @@ const Projects = () => {
           return (
             <Grid item md={3} sm={6} xs={12}>
               <Card
-                sx={{ background: "#e4f1fe", border: "1px solid #d9dad7" }}
+                sx={{
+                  background: "#e6f4f9",
+                  borderRadius: "20px",
+                  boxShadow: "3px 3px 6px #c4cfd4, -3px -3px 6px #fff",
+                  borderColor: "#d1d9e6",
+                }}
                 className="card-hover"
               >
                 <CardContent>
@@ -49,21 +57,22 @@ const Projects = () => {
                   >
                     {item.title}
                   </Typography>
-                  
+
                   <Typography
                     variant="h6"
                     sx={{
                       fontWeight: 600,
                       color: "#272343",
                       textAlign: "center",
-                      cursor:"pointer"
+                      cursor: "pointer",
                     }}
                   >
                     <a
                       href={item.link}
-                      style={{ color: "#272343", fontWeight:600 }}>
-                      {item.link}</a>
-                    
+                      style={{ color: "#272343", fontWeight: 600 }}
+                    >
+                      {item.link}
+                    </a>
                   </Typography>
                 </CardContent>
               </Card>

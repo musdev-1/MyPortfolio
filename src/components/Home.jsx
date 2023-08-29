@@ -77,8 +77,8 @@ const Banner = () => {
               >
                 <a
                   style={{ color: "#272343", textDecoration: "none" }}
-                  href="../assets/ShahzebCV.pdf"
-                  download
+                  href="/ShahzebCV.pdf"
+                  download='ShahzebCV.pdf'
                 >
                   Download Resume
                 </a>

@@ -4,26 +4,36 @@ import { Typography } from "@mui/material";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import "./style.css";
 import React from "react";
+import { Email, LinkedIn, PhoneCallback, WhatsApp } from "@mui/icons-material";
 
 const contactInfo = [
   {
     id: "1",
+    color: "#B23121",
+    icons: <Email />,
     title: "Email",
     description: "shahzebkhattak703@gmail.com",
-    // link: "shahzebkhattak703@gmail.com",
+    link: "shahzebkhattak703@gmail.com",
   },
   {
     id: "2",
-    title: "Skype",
-    description: "shahzebkhattak703@gmail.com",
+    icons: <LinkedIn />,
+    color: " #0072b1",
+    title: "LinkdIn",
+    description: "LinkdIn Profile",
+    link: "https://www.linkedin.com/in/shahzeb-rehman-khattak-5723b7219/",
   },
   {
     id: "3",
-    title: "Mobile ",
+    icons: <PhoneCallback />,
+    color: " #19a7a4",
+    title: "Phone",
     description: "+92 03235254333",
   },
   {
     id: "4",
+    icons: <WhatsApp />,
+    color: " #075e54",
     title: "WhatsApp",
     description: "+92 03235254333",
   },
@@ -73,42 +83,57 @@ const ContactForm = () => {
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", color: "#272343" }}
+            sx={{ textAlign: "center", fontWeight: 600 }}
           >
             Contact Us
           </Typography>
         </Grid>
       </Grid>
-
       <Grid container>
         <Grid item lg={12} md={12} sm={12} xs={12}>
           <Box className="form">
-            <Grid container>
+            <Grid container spacing={2} sx={{ padding: "25px" }}>
               {contactInfo.map((item, index) => {
                 return (
                   <>
                     <Grid item lg={3} md={3} sm={6} xs={12}>
                       <Card
                         sx={{
-                          background: "#e4f1fe",
-                          border: "1px solid #d9dad7",
-                          m: 2,
+                          background: "#e6f4f9",
+                          borderRadius: "20px",
+                          boxShadow: "3px 3px 6px #c4cfd4, -3px -3px 6px #fff",
+                          borderColor: "#d1d9e6",
                         }}
                         className="card-hover"
                       >
                         <CardContent>
-                          <Typography
-                            variant="h6"
+                          <Box
                             sx={{
-                              fontWeight: 600,
-                              color: "#272343",
-                              textAlign: "center",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              gap: "5px",
                             }}
                           >
-                            {item.title}
-                          </Typography>
-                          <Typography
-                            sx={{
+                            <span
+                              style={{ color: `${item.color}`, padding: "1px" }}
+                            >
+                              {item.icons}
+                            </span>
+                            <Typography
+                              variant="h6"
+                              sx={{
+                                fontWeight: 600,
+                                color: "#272343",
+                                textAlign: "center",
+                              }}
+                            >
+                              {item.title}
+                            </Typography>
+                          </Box>
+                          <a
+                            href={item.link}
+                            style={{
                               fontSize: {
                                 lg: "16px",
                                 md: "16px",
@@ -117,12 +142,14 @@ const ContactForm = () => {
                               },
                               fontWeight: 600,
                               color: "#272343",
-                              textAlign: "center",
+                              display: "flex",
+                              justifyContent: "center",
                               cursor: "pointer",
+                              textDecoration: "none",
                             }}
                           >
                             {item.description}
-                          </Typography>
+                          </a>
                         </CardContent>
                       </Card>
                     </Grid>

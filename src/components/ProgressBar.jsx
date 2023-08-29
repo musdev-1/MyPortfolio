@@ -2,8 +2,7 @@ import React from "react";
 import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
-import { Box, Grid } from "@mui/material";
-import { Typography } from "antd";
+import { Box, Grid,Typography } from "@mui/material";
 
 const backgroundColor = [
   "#1890FF",
@@ -107,7 +106,7 @@ function LinearProgressWithLabel(props) {
 const ProgressBar = () => { 
   return (
     <>
-      
+      <Typography variant="h3" sx={{textAlign:"center", fontWeight:600}}>Skills</Typography>
       <Grid columnSpacing={5} rowSpacing={2} container sx={{ width: "100%", padding: "10px"}}>
         {progreeArr.map((item, index) => {
           return (
