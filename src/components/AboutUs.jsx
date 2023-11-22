@@ -20,7 +20,7 @@ const AboutUs = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              fontWeight:600
+              fontWeight: 600,
             }}
           >
             About Me
@@ -40,7 +40,7 @@ const AboutUs = () => {
           lg={6}
           md={6}
           xs={12}
-          sx={{ display: "flex", justifyContent: "center", padding:'1.5rem' }}
+          sx={{ display: "flex", justifyContent: "center", padding: "1.5rem" }}
         >
           <Box
             sx={{
@@ -49,7 +49,7 @@ const AboutUs = () => {
               boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
             }}
           >
-            <img src={img1} alt="" width={400} />
+            <img src={img1} alt="" style={{ maxWidth: "100%" }} />
           </Box>
         </Grid>
         <Grid item lg={6} md={6} xs={12}>
@@ -67,10 +67,11 @@ const AboutUs = () => {
                 },
               }}
             >
-              I am web developer .I have 3 years experiance in web development. I have
-              expertise in Html5, css3, JS, ReactJS,,Typescipt, Next.js,React Native, php ,material ui, scss,
-              bootstrap, mySql, TailwindCss, AntDesign. My design are fully
-              responsive and dynamic in all standard screens.
+              I am web developer .I have 3 years experiance in web development.
+              I have expertise in Html5, css3, JS, ReactJS,,Typescipt,
+              Next.js,React Native, php ,material ui, scss, bootstrap, mySql,
+              TailwindCss, AntDesign. My design are fully responsive and dynamic
+              in all standard screens.
             </Typography>
           </Box>
           <Grid container sx={{ display: "flex", justifyContent: "center" }}>
@@ -79,10 +80,10 @@ const AboutUs = () => {
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9", 
-                  borderRadius:"20px",
+                  background: "#e6f4f9",
+                  borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor:"#d9dad7"
+                  borderColor: "#d9dad7",
                 }}
                 className="card-hover"
               >
@@ -97,12 +98,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                   display: "flex",
+                  display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9", 
-                  borderRadius:"20px",
+                  background: "#e6f4f9",
+                  borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor:"#d9dad7"
+                  borderColor: "#d9dad7",
                 }}
                 className="card-hover"
               >
@@ -112,12 +113,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                   display: "flex",
+                  display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9", 
-                  borderRadius:"20px",
+                  background: "#e6f4f9",
+                  borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor:"#d9dad7"
+                  borderColor: "#d9dad7",
                 }}
                 className="card-hover"
               >
@@ -127,12 +128,12 @@ const AboutUs = () => {
             <Grid item lg={2} sx={{ m: 1 }}>
               <Box
                 sx={{
-                   display: "flex",
+                  display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9", 
-                  borderRadius:"20px",
+                  background: "#e6f4f9",
+                  borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor:"#d9dad7"
+                  borderColor: "#d9dad7",
                 }}
                 className="card-hover"
               >

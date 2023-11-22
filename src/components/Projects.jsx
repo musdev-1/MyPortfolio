@@ -4,8 +4,8 @@ import React from "react";
 const Projects = () => {
   const cardProjects = [
     {
-      title: "School Fee Submission System",
-      link: "http/school.com",
+      title: "Booking Website Verhurun",
+      link: "https://verhuren.vercel.app/",
     },
     {
       title: "Payroll Management System",
