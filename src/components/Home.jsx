@@ -4,8 +4,6 @@ import { Box } from "@mui/material";
 import { Button } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Typewriter from "typewriter-effect";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import bg from "../assets/bg3.png";
 import "./style.css";
 
@@ -55,10 +53,17 @@ const Banner = () => {
                   " CSS",
                   " Javascript",
                   " Bootstrap",
-                  " React",
-                  " php",
-                  " Material Ui",
+                  " React JS",
+                  " Next JS",
                   " SCSS",
+                  " Typescript",
+                  " AntD",
+                  " Tailwind",
+                  " Redux",
+                  " Recoil",
+                  " RTk Query",
+                  " Material Ui",
+                  " php",
                   " MYSQL",
                 ],
               }}
@@ -78,7 +83,7 @@ const Banner = () => {
                 <a
                   style={{ color: "#272343", textDecoration: "none" }}
                   href="/ShahzebCV.pdf"
-                  download='ShahzebCV.pdf'
+                  download="ShahzebCV.pdf"
                 >
                   Download Resume
                 </a>

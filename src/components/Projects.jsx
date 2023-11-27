@@ -4,20 +4,29 @@ import React from "react";
 const Projects = () => {
   const cardProjects = [
     {
-      title: "Booking Website Verhurun",
+      title: "Verhurun Website",
+      Description: "Booking Website",
       link: "https://verhuren.vercel.app/",
     },
     {
-      title: "Payroll Management System",
-      link: "http/school.com",
+      title: "Apple Aircart",
+      Description: "Aim to provide tools for customer relationship management",
+      link: "https://app-dev.airapplecart.co.uk/super-admin",
     },
     {
       title: "Student Help Squad",
+      Description: "To guids students in Uk",
       link: "https://studenthelpsquad.co.uk/",
     },
     {
       title: "AL Meezan AlAhmer",
+      Description: "For order shop equipments",
       link: "https://almeezanalahmer-trqx.vercel.app/",
+    },
+    {
+      title: "New Allied Machinery",
+      Description: "Selling industry Machines",
+      link: "https://alliedwebsite-git-main-shahzebkhattak703-gmailcom.vercel.app/",
     },
   ];
 
@@ -57,11 +66,21 @@ const Projects = () => {
                   >
                     {item.title}
                   </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      color: "#272343",
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.Description}
+                  </Typography>
 
                   <Typography
-                    variant="h6"
                     sx={{
-                      fontWeight: 600,
+                      fontSize: "14px",
+                      fontWeight: 500,
                       color: "#272343",
                       textAlign: "center",
                       cursor: "pointer",
@@ -69,9 +88,13 @@ const Projects = () => {
                   >
                     <a
                       href={item.link}
-                      style={{ color: "#272343", fontWeight: 600 }}
+                      style={{
+                        color: "#626fe6",
+                        fontWeight: 400,
+                        textDecoration: "none",
+                      }}
                     >
-                      {item.link}
+                      Click To View
                     </a>
                   </Typography>
                 </CardContent>

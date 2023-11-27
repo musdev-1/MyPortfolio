@@ -7,7 +7,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { styled } from "@mui/material/styles";
 import ProgressBar from "./ProgressBar";
 
 const AboutUs = () => {

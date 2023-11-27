@@ -28,7 +28,7 @@
 }
 
 .card-hover:hover {
-  border: 2px solid #626fe6;;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   /* background-color: #626fe6; */
 }
 
@@ -90,4 +90,3 @@
   transform: scaleX(1);
   border-radius: 25px;
 }
-
