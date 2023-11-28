@@ -1,132 +1,84 @@
 import React from "react";
-import LinearProgress, {
-  linearProgressClasses,
-} from "@mui/material/LinearProgress";
-import { Box, Grid,Typography } from "@mui/material";
+import {Typography } from "@mui/material";
+import ReactEcharts from "echarts-for-react";
 
-const backgroundColor = [
-  "#1890FF",
-  "#4DB5AB",
-  "#C5A8FF",
-  "#FF8F0D",
-  "#FA5A7D",
-  "#3DA0E4",
-  "#FCB81B",
-];
+const ProgressBar = () => {
+  const backgroundColor = [
+    "#f06529",
+    "#f0db4f",
+    "#61DAFB",
+    "#264de4",
+    "#cc6699",
+    "rgba(234,128,252,1.0)",
+    "#5c3f35",
+    " #007ACC",
+    "#0081CB",
+    "#1677ff",
+    "#e3342f",
+    "#007DBF",
+    "#F29111",
+  ];
 
-const progreeArr = [
- 
-  {
-    title: "Html",
-    value: 99,
-  },
-  {
-    title: "Javascript",
-    value: 80,
-  },
-  {
-    title: "React",
-    value: 90,
-  },
-  {
-    title: "TypeScript",
-    value: 90,
-  },
-  {
-    title: "Next.Js",
-    value: 90,
-  },
-  {
-    title: "Css",
-    value: 99,
-  },
-
-  {
-    title: "SCSS",
-    value: 95,
-  },
- 
-  {
-    title: "Material UI",
-    value: 95,
-  },
-  {
-    title: "Tailwind",
-    value: 95,
-  },
-  {
-    title: "Ant Design",
-    value: 95,
-  },
-  {
-    title: "Bootstrap",
-    value: 95,
-  },
-  {
-    title: "php",
-    value: 80,
-  },
-  {
-    title: "mysql",
-    value: 80,
-  },
-];
-
-function LinearProgressWithLabel(props) {
-  return (
-    <Box className="catergories">
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box sx={{ width: "100%", mr: 1 }}>
-          <LinearProgress variant="determinate" {...props} />
-        </Box>
-        <Box
-          className="progress-box"
-          sx={{
-            padding: "5px",
-            borderRadius: "8px",
-            background: backgroundColor[Math.floor(Math.random() * 6)],
-            border:
-              "0.5px solid backgroundColor[ Math.floor(Math.random() * 6) ]",
-          }}
-        >
-          <Typography
-            className="progress-value"
-            sx={{
-              color: "white",
-              fontSize: "12px",
-              fontWeight: 500,
-            }}
-          >{`${Math.round(props.value)}%`}</Typography>
-        </Box>
-      </Box>
-    </Box>
-  );
-}
-
-const ProgressBar = () => { 
+  const option = {
+    xAxis: {
+      type: "category",
+      data: [
+        "Html",
+        "Javascript",
+        "ReactJs",
+        "Css",
+        "Scss",
+        "Bootstrap",
+        "NextJs",
+        "Typescript",
+        "Material UI",
+        "AntD",
+        "Tailwind",
+        "Php",
+        "MySql",
+      ],
+      axisLabel: {
+        interval: 0, // Show all labels
+        rotate: 45, // Rotate labels for better readability
+      },
+    },
+    yAxis: {
+      type: "value",
+      axisLabel: {
+        formatter: '{value}%', // Display y-axis labels as percentages
+      },
+    },
+    series: [
+      {
+        data: [
+          { value: 99, itemStyle: { color: backgroundColor[0] } },
+          { value: 75, itemStyle: { color: backgroundColor[1] } },
+          { value: 95, itemStyle: { color: backgroundColor[2] } },
+          { value: 99, itemStyle: { color: backgroundColor[3] } },
+          { value: 90, itemStyle: { color: backgroundColor[4] } },
+          { value: 99, itemStyle: { color: backgroundColor[5] } },
+          { value: 80, itemStyle: { color: backgroundColor[6] } },
+          { value: 75, itemStyle: { color: backgroundColor[7] } },
+          { value: 96, itemStyle: { color: backgroundColor[8] } },
+          { value: 93, itemStyle: { color: backgroundColor[9] } },
+          { value: 94, itemStyle: { color: backgroundColor[10] } },
+          { value: 88, itemStyle: { color: backgroundColor[11] } },
+          { value: 92, itemStyle: { color: backgroundColor[12] } },
+        ],
+        type: "bar",
+      },
+    ],
+  };
   return (
     <>
-      <Typography variant="h3" sx={{textAlign:"center", fontWeight:600}}>Skills</Typography>
-      <Grid columnSpacing={5} rowSpacing={2} container sx={{ width: "100%", padding: "10px"}}>
-        {progreeArr.map((item, index) => {
-          return (
-            <Grid item lg={6} xs={12}>
-              <Typography className="progress-title" style={{fontWeight:600}}>{item.title}</Typography>
-              <LinearProgressWithLabel
-                sx={{
-                  padding: "3px",
-                  borderRadius: "6px",
-                  background: "#D9DBE9",
-                  "& .MuiLinearProgress-bar1Determinate": {
-                    backgroundColor: backgroundColor[index % 6],
-                  },
-                }}
-                value={item.value}
-              />
-            </Grid>
-          );
-        })}
-      </Grid>
+      <Typography variant="h3" sx={{ textAlign: "center", fontWeight: 600 }}>
+        Skills
+      </Typography>
+
+      <ReactEcharts
+        option={option}
+        style={{ height: "500px", width: "100%" }}
+      />
     </>
   );
 };

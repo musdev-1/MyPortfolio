@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../assets/logo-removebg-preview.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import "./style.css";
 
 const pages = ["Home", "About Us", "Blog", "Service", "Contact Us"];
@@ -35,7 +34,7 @@ const Navbar = () => {
               display: { lg: "block", md: "block", sm: "none", xs: "none" },
             }}
           >
-            <img src={logo} width={100} />
+            <img src={logo} width={100} alt="logo" />
           </Box>
           <Typography
             variant="h6"

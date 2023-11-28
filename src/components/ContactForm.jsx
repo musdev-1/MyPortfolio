@@ -1,7 +1,6 @@
-import { Button, Card, CardContent, Grid } from "@mui/material";
+import { Card, CardContent, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
-import TextareaAutosize from "@mui/material/TextareaAutosize";
 import "./style.css";
 import React from "react";
 import { Email, LinkedIn, PhoneCallback, WhatsApp } from "@mui/icons-material";
