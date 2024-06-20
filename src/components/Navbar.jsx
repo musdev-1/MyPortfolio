@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../assets/logo-removebg-preview.png";
 import "./style.css";
 
-const pages = ["Home", "About Us", "Blog", "Service", "Contact Us"];
+const pages = ["Home", "About", "Projects", "Service", "Contact Us"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,7 +31,7 @@ const Navbar = () => {
         <Toolbar disableGutters>
           <Box
             sx={{
-              display: { lg: "block", md: "block", sm: "none", xs: "none" },
+              display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' },
             }}
           >
             <img src={logo} width={100} alt="logo" />
@@ -40,22 +40,23 @@ const Navbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#home"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
-              // fontFamily: "monospace",
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'Montserrat, sans-serif',
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "#272343",
-              textDecoration: "none",
-              fontSize: "45px",
+              letterSpacing: '.3rem',
+              color: '#272343',
+              textDecoration: 'none',
+              fontSize: '45px',
+              cursor: 'pointer',
             }}
           >
             Shahzeb Portfolio
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -70,22 +71,27 @@ const Navbar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: 'block', md: 'none' },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  component="a"
+                  href={`#${page.toLowerCase()}`}
+                >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -99,13 +105,12 @@ const Navbar = () => {
             href=""
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "#272343",
-              textDecoration: "none",
+              letterSpacing: '.3rem',
+              color: '#272343',
+              textDecoration: 'none',
             }}
           >
             Shahzeb
@@ -113,19 +118,20 @@ const Navbar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: { md: "end", xs: "none" },
+              display: { xs: 'none', md: 'flex' },
+              justifyContent: { md: 'end', xs: 'none' },
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                href={`#${page.toLowerCase()}`}
                 sx={{
                   my: 2,
-                  color: "#272343",
-                  display: "block",
-                  fontWeight: "bold",
+                  color: '#272343',
+                  display: 'block',
+                  fontWeight: 'bold',
                 }}
               >
                 {page}

@@ -29,11 +29,12 @@ const cardService = [
 const Services = () => {
   return (
     <>
-      <Grid container sx={{ marginTop: "50px" }}>
+      <Grid container sx={{ marginTop: "50px" }} id="service">
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", fontWeight: 600 }}
+            sx={{ textAlign: "center", fontFamily: 'Montserrat, sans-serif',
+            fontWeight:600 , }}
           >
             Services
           </Typography>
@@ -46,10 +47,10 @@ const Services = () => {
             <Grid item md={3} sm={6} xs={12}>
               <Card
                 sx={{
-                  background: "#e6f4f9",
+              
                   borderRadius: "20px",
                   boxShadow: "3px 3px 6px #c4cfd4, -3px -3px 6px #fff",
-                  borderColor: "#d1d9e6",
+                 
                 }}
                 className="card-hover"
               >
@@ -57,7 +58,8 @@ const Services = () => {
                   <Typography
                     variant="h6"
                     sx={{
-                      fontWeight: 600,
+                      fontFamily: 'Montserrat, sans-serif',
+                      fontWeight:600 ,
                       color: "#272343",
                       textAlign: "center",
                     }}
@@ -67,7 +69,8 @@ const Services = () => {
                   <Typography
                     sx={{
                       fontSize: "14px",
-                      fontWeight: 500,
+                      fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:500 ,
                       color: "#272343",
                       textAlign: "center",
                     }}

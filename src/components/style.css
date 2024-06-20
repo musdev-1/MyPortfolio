@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   background-color: lightblue;
 }
@@ -17,12 +23,12 @@
 .address {
   display: flex;
   align-items: center;
-  font-family: Montserate;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 19px;
 }
 .progress-label {
-  font-family: Montserate;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
 }

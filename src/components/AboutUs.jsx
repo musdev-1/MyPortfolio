@@ -12,7 +12,7 @@ import ProgressBar from "./ProgressBar";
 const AboutUs = () => {
   return (
     <>
-      <Grid container mt={2}>
+      <Grid container mt={2} id="about">
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
@@ -20,6 +20,7 @@ const AboutUs = () => {
               display: "flex",
               justifyContent: "center",
               fontWeight: 600,
+              fontFamily: 'Montserrat, sans-serif',
             }}
           >
             About Me
@@ -56,35 +57,36 @@ const AboutUs = () => {
             <Typography
               sx={{
                 fontSize: { lg: "25px", md: "22px", sm: "22px", xs: "16px" },
-                fontFamily: "Montserate",
-                fontWeight: 500,
+                fontFamily: 'Montserrat, sans-serif',
+              fontWeight:500 ,
+                textTransform:'capitalize',
                 textAlign: {
                   sm: "center",
                   xs: "center",
                   md: "left",
-                  lg: "center",
+                  lg: "left",
                 },
               }}
             >
-              I am web developer .I have 3 years experiance in web development.
-              I have expertise in Html5, css3, JS, ReactJS,,Typescipt,
+              I am web developer .I have 4 years experiance in web development.
+              I have expertise in Html5, css3, JS, ReactJS,Typescipt,
               Next.js,React Native, php ,material ui, scss, bootstrap, mySql,
               TailwindCss, AntDesign. My design are fully responsive and dynamic
               in all standard screens.
             </Typography>
           </Box>
           <Grid container sx={{ display: "flex", justifyContent: "center" }}>
-            <Grid item lg={2} sx={{ m: 1 }}>
+            <Grid item lg={2}  xs={4} sx={{ m: 1 }}>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9",
+                 
                   borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor: "#d9dad7",
+                 
                 }}
-                className="card-hover"
+               
               >
                 <FacebookIcon
                   sx={{
@@ -94,47 +96,48 @@ const AboutUs = () => {
                 />
               </Box>
             </Grid>
-            <Grid item lg={2} sx={{ m: 1 }}>
+            <Grid item lg={2} xs={4} sx={{ m: 1 }}>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9",
+                  
                   borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor: "#d9dad7",
+                 
                 }}
-                className="card-hover"
+               
               >
                 <GitHubIcon sx={{ fontSize: 100, color: "#967bb6" }} />
               </Box>
             </Grid>
-            <Grid item lg={2} sx={{ m: 1 }}>
+            <Grid item lg={2} xs={4} sx={{ m: 1 }}>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9",
+               
                   borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor: "#d9dad7",
+                 
                 }}
-                className="card-hover"
+                
               >
+                
                 <LinkedInIcon sx={{ fontSize: 100, color: "#0072b1" }} />
               </Box>
             </Grid>
-            <Grid item lg={2} sx={{ m: 1 }}>
+            <Grid item lg={2} xs={4} sx={{ m: 1 }}>
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  background: "#e6f4f9",
+               
                   borderRadius: "20px",
                   boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-                  borderColor: "#d9dad7",
+                 
                 }}
-                className="card-hover"
+                
               >
                 <TwitterIcon sx={{ fontSize: 100, color: "#1DA1F2" }} />
               </Box>

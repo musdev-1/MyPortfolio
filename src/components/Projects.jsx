@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <>
-      <Grid container>
+      <Grid container id="projects">
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
@@ -48,10 +48,11 @@ const Projects = () => {
             <Grid item md={3} sm={6} xs={12}>
               <Card
                 sx={{
-                  background: "#e6f4f9",
+               
                   borderRadius: "20px",
                   boxShadow: "3px 3px 6px #c4cfd4, -3px -3px 6px #fff",
-                  borderColor: "#d1d9e6",
+                 
+                  
                 }}
                 className="card-hover"
               >
@@ -59,9 +60,11 @@ const Projects = () => {
                   <Typography
                     variant="h6"
                     sx={{
-                      fontWeight: 600,
+                      fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:600 ,
                       color: "#272343",
                       textAlign: "center",
+
                     }}
                   >
                     {item.title}
@@ -69,7 +72,8 @@ const Projects = () => {
                   <Typography
                     sx={{
                       fontSize: "14px",
-                      fontWeight: 500,
+                      fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:500 ,
                       color: "#272343",
                       textAlign: "center",
                     }}
@@ -80,7 +84,8 @@ const Projects = () => {
                   <Typography
                     sx={{
                       fontSize: "14px",
-                      fontWeight: 500,
+                      fontFamily: 'Montserrat, sans-serif',
+                      fontWeight:500 ,
                       color: "#272343",
                       textAlign: "center",
                       cursor: "pointer",
@@ -90,7 +95,8 @@ const Projects = () => {
                       href={item.link}
                       style={{
                         color: "#626fe6",
-                        fontWeight: 400,
+                        fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:500 ,
                         textDecoration: "none",
                       }}
                     >

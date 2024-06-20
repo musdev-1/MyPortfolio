@@ -78,13 +78,14 @@ const ContactForm = () => {
 
   return (
     <>
-      <Grid container>
+      <Grid container id="contact us">
         <Grid item md={12} xs={12}>
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", fontWeight: 600 }}
+            sx={{ textAlign: "center", fontFamily: 'Montserrat, sans-serif',
+            fontWeight:600  }}
           >
-            Contact Us
+            Contact 
           </Typography>
         </Grid>
       </Grid>
@@ -98,10 +99,10 @@ const ContactForm = () => {
                     <Grid item lg={3} md={3} sm={6} xs={12}>
                       <Card
                         sx={{
-                          background: "#e6f4f9",
+                       
                           borderRadius: "20px",
                           boxShadow: "3px 3px 6px #c4cfd4, -3px -3px 6px #fff",
-                          borderColor: "#d1d9e6",
+                       
                         }}
                         className="card-hover"
                       >
@@ -122,7 +123,8 @@ const ContactForm = () => {
                             <Typography
                               variant="h6"
                               sx={{
-                                fontWeight: 600,
+                                fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:600 ,
                                 color: "#272343",
                                 textAlign: "center",
                               }}
@@ -139,7 +141,8 @@ const ContactForm = () => {
                                 sm: "16px",
                                 xs: "17px",
                               },
-                              fontWeight: 600,
+                              fontFamily: 'Montserrat, sans-serif',
+                  fontWeight:600 ,
                               color: "#272343",
                               display: "flex",
                               justifyContent: "center",
