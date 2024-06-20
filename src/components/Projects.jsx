@@ -10,7 +10,7 @@ const Projects = () => {
     },
     {
       title: "Apple Aircart",
-      Description: "Aim to provide tools for customer relationship management",
+      Description: "Aim to provide tools for customer relationship",
       link: "https://app-dev.airapplecart.co.uk/super-admin",
     },
     {
