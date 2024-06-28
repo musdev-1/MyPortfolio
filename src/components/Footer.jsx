@@ -27,7 +27,7 @@ const Footer = () => {
               padding: "0.5rem",
             }}
           >
-            Copyright   <a href="mail:shahzebkhattak703@gmail.com" style={{ color: "#272343",textDecoration:'none'}}>shahzebkhattak703@gmail.com</a>
+            Copyright   <a href="mailto:shahzebkhattak703@gmail.com" style={{ color: "#272343",textDecoration:'none'}}>shahzebkhattak703@gmail.com</a>
           </Typography>
         </Grid>
       </Grid>
