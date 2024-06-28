@@ -35,7 +35,7 @@ const contactInfo = [
     color: " #075e54",
     title: "WhatsApp",
     description: "+92 03235254333",
-    link: "https://wa.me/+923235254333",
+    link: "https://wa.me/923235254333&text=Welcome",
   },
 ];
 
