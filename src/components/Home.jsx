@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import { Button } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Typewriter from "typewriter-effect";
-import bg from "../assets/bg3.png";
+import img1 from "../assets/mebg.png";
 import "./style.css";
 
 const name = "Shahzeb Rehman Khattak";
@@ -97,12 +97,18 @@ const Banner = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} lg={6} xl={6}>
-          <Box sx={{
-            display:"flex",
-            justifyContent:"center"
-          }}>
- <img src={bg} alt="error "  style={{ maxWidth: "100%" }} />
+        <Grid item xs={12} md={6} lg={6} xl={6}
+        
+        sx={{ display: "flex", justifyContent: "center", padding: "1.5rem" }}
+        >
+        <Box
+            sx={{
+              borderRadius: "40% 70% 70% 40% / 50% 30% 70% 70% ",
+              background: "lightblue",
+              boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
+            }}
+          >
+            <img src={img1} alt="" style={{ maxWidth: "100%" }} />
           </Box>
          
         </Grid>

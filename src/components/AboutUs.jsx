@@ -2,12 +2,12 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
-import img1 from "../assets/mebg.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import ProgressBar from "./ProgressBar";
+import bg from "../assets/bg3.png";
 
 const AboutUs = () => {
   return (
@@ -32,6 +32,7 @@ const AboutUs = () => {
         spacing={3}
         sx={{
           padding: "25px",
+          flexWrap: {xs:'wrap-reverse' },
           textAlign: { sm: "center", xs: "center", md: "left" },
         }}
       >
@@ -40,17 +41,11 @@ const AboutUs = () => {
           lg={6}
           md={6}
           xs={12}
-          sx={{ display: "flex", justifyContent: "center", padding: "1.5rem" }}
+          sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Box
-            sx={{
-              borderRadius: "40% 70% 70% 40% / 50% 30% 70% 70% ",
-              background: "lightblue",
-              boxShadow: "2px 2px 3px #c4cfd4, -2px -2px 3px #fff",
-            }}
-          >
-            <img src={img1} alt="" style={{ maxWidth: "100%" }} />
-          </Box>
+
+<img src={bg} alt="error "  style={{ maxWidth: "100%" }} />
+        
         </Grid>
         <Grid item lg={6} md={6} xs={12}>
           <Box sx={{ mt: 3, mb: 4 }}>
