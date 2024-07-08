@@ -12,7 +12,7 @@ import ContactForm from "./components/ContactForm";
 function App() {
   return (
     <>
-      <Grid container sx={{ backgroundColor: "#e4f1fe", color: "#272343" }}>
+      <Grid  sx={{ backgroundColor: "#e4f1fe", color: "#272343" }}>
         <Navbar />
         <Banner />
         <AboutUs />

@@ -14,11 +14,12 @@ const experience = "4 years";
 const Banner = () => {
   return (
     <div id="home">
-      <Grid
+      <Grid 
         container
-        sx={{ display: "flex", alignItems: "center", mt: 15, mb: 6 }}
+        spacing={2}
+        sx={{  pt: 15, mb: 6 }}
       >
-        <Grid item xs={12} md={6} lg={6} sx={{ textAlign: "center" }}>
+        <Grid item xs={12} md={6} lg={6} xl={6} sx={{ textAlign: "center" }}>
           <Typography variant="h5" sx={{ fontFamily: 'Montserrat, sans-serif', mt: 2,fontWeight:500 }}>
             Hi I am
           </Typography>
@@ -96,8 +97,14 @@ const Banner = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} lg={6}>
-          <img src={bg} alt="error " style={{ width: "100%" }} />
+        <Grid item xs={12} md={6} lg={6} xl={6}>
+          <Box sx={{
+            display:"flex",
+            justifyContent:"center"
+          }}>
+ <img src={bg} alt="error "  style={{ maxWidth: "100%" }} />
+          </Box>
+         
         </Grid>
       </Grid>
     </div>
