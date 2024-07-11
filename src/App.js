@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Banner from "./components/Home";
 import Grid from "@mui/material/Grid";
-
 import "./components/style.css";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
@@ -21,6 +20,7 @@ function App() {
         <ContactForm />
         <Footer />
       </Grid>
+
     </>
   );
 }

@@ -6,12 +6,16 @@ import Grid from "@mui/material/Grid";
 import Typewriter from "typewriter-effect";
 import img1 from "../assets/mebg.png";
 import "./style.css";
+import MyCv from "./MyCv";
 
 const name = "Shahzeb Rehman Khattak";
 const occupation = "Software Engineer";
 const experience = "4 years";
 
 const Banner = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div id="home">
       <Grid 
@@ -84,15 +88,16 @@ const Banner = () => {
                   padding: "8px 20px",
                 }}
                 className="btn hvr-sweep-to-right"
+                onClick={handleOpen}
               >
-                <a
+                {/* <a
                   style={{ color: "#272343", textDecoration: "none", fontFamily: 'Montserrat, sans-serif',
                   fontWeight:600  }}
-                  href="/ShahzebCV.pdf"
+                  href="../ShahzebCV.pdf"
                   download="ShahzebCV.pdf"
-                >
-                  Download Resume
-                </a>
+                > */}
+                  View Profile
+                {/* </a> */}
               </Button>
             </Box>
           </Box>
@@ -113,6 +118,15 @@ const Banner = () => {
          
         </Grid>
       </Grid>
+      <MyCv
+      open={open}
+      setOpen={setOpen}
+      handleClose={handleClose}
+      handleOpen={handleOpen}
+      name={name}
+       occupation = {occupation}
+       experience = {experience}
+      />
     </div>
   );
 };
