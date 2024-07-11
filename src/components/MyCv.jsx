@@ -241,6 +241,26 @@ const MyCv = (prop) => {
                 >
                   React Native
                 </Typography>
+                <Typography
+                  sx={{
+                    color: "#272343",
+                    textDecoration: "none",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  Redux/ Rtk Query
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "#272343",
+                    textDecoration: "none",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  Recoil
+                </Typography>
               </Grid>
               <Grid item lg={6} xs={4} sx={{ textAlign: "center" }}>
                 <Typography
@@ -293,6 +313,16 @@ const MyCv = (prop) => {
                 >
                   Scss
                 </Typography>
+                <Typography
+                  sx={{
+                    color: "#272343",
+                    textDecoration: "none",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  Media query
+                </Typography>
               </Grid>
               <Grid item lg={6} xs={4} sx={{ textAlign: "center" }}>
                 <Typography
@@ -316,6 +346,16 @@ const MyCv = (prop) => {
                 >
                   DecoNetwork
                 </Typography>
+                <Typography
+                  sx={{
+                    color: "#272343",
+                    textDecoration: "none",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  Odoo 
+                </Typography>
               </Grid>
               <Grid item lg={6}  sx={{ textAlign: "center" }}>
                 <Typography
@@ -338,6 +378,16 @@ const MyCv = (prop) => {
                   }}
                 >
                   Nodejs
+                </Typography>
+                <Typography
+                  sx={{
+                    color: "#272343",
+                    textDecoration: "none",
+                    fontFamily: "Montserrat, sans-serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  Api Integration
                 </Typography>
               </Grid>
             </Grid>

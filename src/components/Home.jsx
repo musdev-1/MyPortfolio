@@ -82,7 +82,7 @@ const Banner = () => {
                 sx={{
                   borderRadius: "25px",
                   border: "2px solid #626fe6",
-                  color: "white",
+                  color: "#626fe6",
                   fontWeight: 600,
                   margin: "10px",
                   padding: "8px 20px",
