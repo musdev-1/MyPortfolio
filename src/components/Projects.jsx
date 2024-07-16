@@ -4,6 +4,11 @@ import React from "react";
 const Projects = () => {
   const cardProjects = [
     {
+      title: "Todo List in React",
+      Description: "Datasaved in local storage .CRUD operations works",
+      link: "https://todo-app-two-eta-58.vercel.app/",
+    },
+    {
       title: "Verhurun Website",
       Description: "Booking Website",
       link: "https://verhuren.vercel.app/",
