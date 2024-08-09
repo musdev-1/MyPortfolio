@@ -16,8 +16,10 @@ import antd from "../assets/antd.jpeg";
 import native from "../assets/native.webp";
 import wordpress from "../assets/wordpress.jpg";
 import deco from "../assets/deco.png";
-
-
+import vite from '../assets/vite.png';
+import redux from '../assets/redux.png'
+import recoil from '../assets/recoil.png'
+import rtk from '../assets/rtk.png'
 const ProgressBar = () => {
   const skills = [
     {
@@ -43,7 +45,7 @@ const ProgressBar = () => {
     {
       img: deco,
 
-      title: "DecoNetwork",
+      title: "Deco Network",
     },
     {
       img: mysql,
@@ -55,14 +57,30 @@ const ProgressBar = () => {
       title: "ReactJs",
     },
     {
+      img: vite,
+      title: "ReactJs + Vite",
+    },
+    {
       img: native,
 
       title: "React Native",
     },
    
-   
-  
-  
+    {
+      img: redux,
+
+      title: "Redux",
+    },
+    {
+      img: recoil,
+
+      title: "Recoil",
+    },
+    {
+      img: rtk,
+
+      title: "RTK Query",
+    },
     { img: next, title: "NextJs" },
     { img: typescript, title: "Typescript" },
     { img: bootstrap, title: "Bootstrap" },

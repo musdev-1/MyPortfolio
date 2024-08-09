@@ -4,6 +4,11 @@ import React from "react";
 const Projects = () => {
   const cardProjects = [
     {
+      title: "Password Generator",
+      Description: "Project build in React + Vite and Tailwind.I use callback , usememo and useffect hooks.App will generate random password",
+      link: "https://password-generator-puce-theta.vercel.app/",
+    },
+    {
       title: "Todo List",
       Description: "Datasaved in local storage .CRUD operations works.Built in Reactjs and Antd",
       link: "https://todo-app-two-eta-58.vercel.app/",
@@ -39,10 +44,16 @@ const Projects = () => {
       link: "https://almeezanalahmer-trqx.vercel.app/",
     },
     {
-      title: "New Allied Machinery",
-      Description: "Selling industry Machines",
-      link: "https://alliedwebsite-git-main-shahzebkhattak703-gmailcom.vercel.app/",
+      title: "Garments Printing",
+      Description: "website designed in Deconetwort Cms",
+      link: "https://garmentprinting.com.au/",
     },
+    {
+      title: "Garments Printing Blog",
+      Description: "website designed in wordpress Cms",
+      link: "https://garmentprinting.com.au/blog",
+    },
+   
   ];
 
   return (
