@@ -10,6 +10,11 @@ const Projects = () => {
       link: "https://skyangel-game.vercel.app/",
     },
     {
+      title: "Online Shopping Store",
+      Description: "Project build in React js ReduxTool kit and React Icons.Purpose is just to show skills. Data is store on local storage and all data registration annd add to cart functionality working. ",
+      link: "https://my-eccommercce-app.vercel.app/",
+    },
+    {
       title: "Password Generator",
       Description: "Project build in React + Vite and Tailwind.I use callback , usememo and useffect hooks.App will generate random password",
       link: "https://password-generator-puce-theta.vercel.app/",
