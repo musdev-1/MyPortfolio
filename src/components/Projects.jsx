@@ -3,6 +3,12 @@ import React from "react";
 
 const Projects = () => {
   const cardProjects = [
+
+    {
+      title: "Sky  Angel Game",
+      Description: "Project build in Html Css Javascript.Purpose is just to show skills ",
+      link: "https://skyangel-game.vercel.app/",
+    },
     {
       title: "Password Generator",
       Description: "Project build in React + Vite and Tailwind.I use callback , usememo and useffect hooks.App will generate random password",
