@@ -25,6 +25,11 @@ const Projects = () => {
       link: "https://todo-app-two-eta-58.vercel.app/",
     },
     {
+      title: "Go Inspire Client App",
+      Description: "Project build in Next js Antd.Client Proeject Development is  continue.. Data is store on local storage. ",
+      link: "https://goinspire.vercel.app/",
+    },
+    {
       title: "Koriander Pizza Dellivery Website ",
       Description: "Build in next js, antd .Data and images provided by client. Deployed on Hostinger",
       link: "https://korriander.vercel.app/",
