@@ -134,8 +134,8 @@ const Banner = () => {
                   href="../ShahzebCV.pdf"
                   download="ShahzebCV.pdf"
                 > */}
-                View Profile
                 {/* </a> */}
+                View Profile
               </Button>
             </Box>
           </Box>
